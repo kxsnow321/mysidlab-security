@@ -24,5 +24,4 @@
         name: "{{ item.name }}"
         state: "{{ user_opts.state }}"
         groups: "{{ item.aws_groups }}"
-        password: "{{ sidpasswd }}"
       loop: "{{ users }}"
